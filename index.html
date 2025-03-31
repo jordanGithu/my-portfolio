@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Neller | Développeur Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="rune-overlay"></div>
+    
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <h1>JORDAN NELLER</h1>
+                <p>DÉVELOPPEUR WEB</p>
+            </div>
+      
+            <div class="bifrost-container">
+                <div class="bifrost-ring">
+                    <div class="bifrost-center"></div>
+                </div>
+                <nav class="bifrost-nav">
+                    <ul>
+                        <li><a href="#accueil"><span class="rune">ᚨ</span><span class="label">Accueil</span></a></li>
+                        <li><a href="#a-propos"><span class="rune">ᛒ</span><span class="label">À propos</span></a></li>
+                        <li><a href="#competences"><span class="rune">ᛖ</span><span class="label">Compétences</span></a></li>
+                        <li><a href="#projets"><span class="rune">ᚦ</span><span class="label">Projets</span></a></li>
+                        <li><a href="#contact"><span class="rune">ᚱ</span><span class="label">Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <div class="hammer-icon">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section id="accueil" class="realm active-realm">
+                <div class="realm-content">
+                    <div class="hero-container">
+                        <div class="hero-content">
+                            <h2 class="realm-title">Bienvenue sur mon portfolio</h2>
+                            <p class="hero-text">Je suis <span class="highlight">Jordan Neller</span>, développeur web fullstack</p>
+                            <div class="hero-actions">
+                                <a href="#projets" class="axe-btn">Voir mes projets</a>
+                                <a href="./img/cv-jordan-neller.pdf" class="rune-btn" download>Télécharger mon CV</a>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="profile-frame">
+                                <img src="./img/portfolio-pdp.png" alt="Jordan Neller">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="realm-background" data-realm="midgard"></div>
+            </section>
+
+            <!-- Section À propos -->
+            <section id="a-propos" class="realm">
+                <div class="realm-content">
+                    <h2 class="realm-title"><span class="highlight">Présentation</span></h2>
+                    <div class="about-container">
+                        <div class="about-text">
+                            <p>D'abord intéressé par le  graphique, j'ai découvert le développement web suite à plusieurs concours, c'est ainsi que j'ai pu me découvrir d'abord un simple intéret pour le developpement web.Après avoir réaliser différents projets, j'ai développer une véritable passions dans le développement de solution web.</p>
+                            <p>Actuellement en formation et à la recherche d'une alternance comme développeur web, je travaille sur des projets enrichissants me permettant d'approfondir mes connaissances et d'en développer de nouvelle lorsque nécessaire .</p>
+                            <div class="rune-divider"></div>
+                            <div class="about-stats">
+                                <div class="stat">
+                                    <span class="stat-icon"><i class="fas fa-code"></i></span>
+                                    <span class="stat-value">4</span>
+                                    <span class="stat-label">Projets Web</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-icon"><i class="fas fa-globe"></i></span>
+                                    <span class="stat-value">HTML5</span>
+                                    <span class="stat-label">Maîtrisé</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-icon"><i class="fas fa-language"></i></span>
+                                    <span class="stat-value">B2</span>
+                                    <span class="stat-label">Anglais</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="realm-background" data-realm="alfheim"></div>
+            </section>
+
+            <!-- Section Compétences -->
+            <section id="competences" class="realm">
+                <div class="realm-content">
+                    <h2 class="realm-title">Arsenal de <span class="highlight">compétences</span></h2>
+                    
+                    <div class="skills-container">
+                        <h3 class="section-subtitle">Frontend / Backend / Gestion de base de données</h3>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="html">
+                                <i class="fab fa-html5"></i>
+                                <h4>HTML</h4>
+                                <p>Structure sémantique<br>Accessibilité</p>
+                            </div>
+                            <div class="skill-card" data-skill="css">
+                                <i class="fab fa-css3-alt"></i>
+                                <h4>CSS</h4>
+                                <p>Responsive design<br>Animations</p>
+                            </div>
+                            <div class="skill-card" data-skill="js">
+                                <i class="fab fa-js"></i>
+                                <h4>JavaScript</h4>
+                                <p>Manipulation du DOM<br>API fetch</p>
+                            </div>
+                            <div class="skill-card" data-skill="php">
+                                <i class="fab fa-php"></i>
+                                <h4>PHP</h4>
+                                <p>Développement back-end<br>Formulaires et autres </p>
+                            </div>
+                            <div class="skill-card" data-skill="sql">
+                                <i class="fas fa-database"></i>
+                                <h4>SQL</h4>
+                                <p>Conception BDD<br>Requêtes</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Soft skills -->
+                        <h3 class="section-subtitle">Soft-skills</h3>
+                        <div class="soft-skills">
+                            <div class="soft-skill">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>
+                                    <h4>Autonomie</h4>
+                                    <p>Capacité à travailler de manière indépendante et à prendre des initiatives</p>
+                                </div>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-exchange-alt"></i>
+                                <div>
+                                    <h4>Adaptabilité</h4>
+                                    <p>Flexibilité face aux changements et aux nouvelles technologies</p>
+                                </div>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <h4>Communication</h4>
+                                    <p>Expression claire des idées et écoute active</p>
+                                </div>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-hourglass-half"></i>
+                                <div>
+                                    <h4>Gestion du temps</h4>
+                                    <p>Organisation efficace et respect des délais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="realm-background" data-realm="svartalfheim"></div>
+            </section>
+
+            <!-- Section Projets -->
+            <section id="projets" class="realm">
+                <div class="realm-content">
+                    <h2 class="realm-title">Mes <span class="highlight">projets</span></h2>
+                    
+                    <div class="projects-container">
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./img/twitter-pdp.png" alt="Clone de Twitter">
+                            </div>
+                            <div class="project-content">
+                                <h3>Twitter (Projet de groupe)</h3>
+                                <p>Recréation des fonctionnalités principales de Twitter avec authentification et interactions.</p>
+                                <div class="project-techs">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>SQL</span>
+                                </div>
+                                <div class="project-actions">
+                                    <div class="project-actions">
+                                        <a href="https://github.com/jordanGithu/W-WEB-090-LYN-1-1-academie-aliyo.moussa" class="axe-btn btn-small" target="_blank">Voir</a>
+                                        <a href="https://github.com/jordanGithu/W-WEB-090-LYN-1-1-academie-aliyo.moussa" class="rune-btn btn-small" target="_blank">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./img/spotify-pdp.jpg" alt="Clone de Spotify">
+                            </div>
+                            <div class="project-content">
+                                <h3>Spotify (Projet de groupe)</h3>
+                                <p>Interface utilisateur avec lecture audio.</p>
+                                <div class="project-techs">
+                                    <span>React.js</span>
+                                </div>
+                                <div class="project-actions">
+                                    <div class="project-actions">
+                                        <a href="https://github.com/jordanGithu/W-WEB-090-LYN-1-1-spotify-jihad.bakari" class="axe-btn btn-small" target="_blank">Voir</a>
+                                        <a href="https://github.com/jordanGithu/W-WEB-090-LYN-1-1-spotify-jihad.bakari" class="rune-btn btn-small" target="_blank">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="realm-background" data-realm="muspelheim"></div>
+            </section>
+
+            <!-- Section Contact -->
+            <section id="contact" class="realm">
+                <div class="realm-content">
+                    <h2 class="realm-title">Me <span class="highlight">contacter</span></h2>
+                    
+                    <div class="contact-container">
+                        <!-- Informations de contact -->
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>jordan.neller@epitech.eu</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Téléphone</h4>
+                                    <p>06 99 31 23 30</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Localisation</h4>
+                                    <p>Lyon, France</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Réseaux sociaux -->
+                            <div class="social-links">
+                                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form-container">
+                            <form id="contact-form" class="rune-form" action="https://formspree.io/f/xvgkbvwr" method="POST">
+
+                                <div class="form-group">
+                                    <label for="name">Nom</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Sujet</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="axe-btn btn-full">Envoyer votre message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="realm-background" data-realm="helheim"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Jordan Neller - Tous droits réservés</p>
+                <p><a href="cv-jordan-neller.pdf" download>Télécharger mon CV</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
