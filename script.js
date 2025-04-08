@@ -10,39 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
     setupContactForm();
 });
 
-function setupParticles() {
-    if (typeof particlesJS !== 'undefined') {
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 40, density: { enable: true, value_area: 800 } },
-                color: { value: ["#a4bfd4", "#739bd0"] },
-                shape: { type: "circle" },
-                opacity: { value: 0.3, random: true },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: "#739bd0", opacity: 0.2, width: 1 },
-                move: { enable: true, speed: 0.8, direction: "none", random: true }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: { enable: true, mode: "grab" },
-                    onclick: { enable: true, mode: "push" }
-                }
-            }
-        });
-    }
-}
-
 function setupBifrostNav() {
     const bifrostRing = document.querySelector('.bifrost-ring');
     const bifrostNav = document.querySelector('.bifrost-nav');
-    
+
     if (bifrostRing && bifrostNav) {
         bifrostRing.addEventListener('click', function() {
             bifrostNav.classList.toggle('active');
             bifrostRing.classList.toggle('active');
         });
-        
+
         const navLinks = document.querySelectorAll('.bifrost-nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -70,7 +47,7 @@ function setupMobileMenu() {
                 const clone = item.cloneNode(true);
                 navList.appendChild(clone);
             });
-            
+        
             mobileNav.appendChild(navList);
             document.querySelector('header').insertAdjacentElement('afterend', mobileNav);
         }
@@ -106,11 +83,11 @@ function setupMobileMenu() {
 function setupRealmNavigation() {
     const realms = document.querySelectorAll('.realm');
     const navLinks = document.querySelectorAll('a[href^="#"]');
-    
+
     if (realms.length > 0) {
         realms[0].classList.add('active-realm');
     }
-    
+
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -134,7 +111,7 @@ function setupRealmNavigation() {
                 });
             }
         });
-    });
+    })
     
     if ('IntersectionObserver' in window) {
         const observerOptions = {
@@ -209,3 +186,4 @@ function setupContactForm() {
         });
     }
 }
+
