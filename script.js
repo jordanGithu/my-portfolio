@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     setupRealmNavigation();
     
     setupContactForm();
+
+    setupScrollAnimations();
 });
 
 function setupBifrostNav() {
@@ -186,6 +188,5 @@ function setupContactForm() {
         });
     }
 }
-
 
 
