@@ -1,8 +1,20 @@
 $color-dark: #0a1117;         
-$color-blue-mid: #1a3c5b;        
+$color-blue-mid: #091e32;        
 $color-blue-light: #3b6d98;     
 $color-blue-ice: #8ab7d0;      
-$color-blue-frost: #c9dae7;      
+$color-blue-frost: #c9dae7; 
+
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+$border-radius-sm: 6px;
+$border-radius-md: 12px;
+$color-snow: #f0f4f8;
+$gradient-ice: linear-gradient(135deg, #8ab7d0, #c9dae7);
+$gradient-frost: linear-gradient(135deg, #3b6d98, #8ab7d0);
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-sm: 576px;
 
 * {
   margin: 0;
@@ -20,6 +32,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel', serif;
   font-weight: 700;
   margin-bottom: $spacing-sm;
+}
+
+p {
+  // font-family: 'Cinzel', serif;
+  color: $color-blue-frost
 }
 
 a {
@@ -343,7 +360,7 @@ main {
   
   img {
     position: absolute; // Position absolue pour un contrôle total
-    top: 20%; // Positionne à 50% du haut
+    top: 50%; // Positionne à 50% du haut
     left: 50%; // Positionne à 50% de la gauche
     transform: translate(-50%, -50%); // Centre précisément l'image
     width: 100%; // Ajustez selon vos besoins (100% ou plus)
@@ -394,13 +411,13 @@ main {
 .btn-full { width: 100%; }
 
 .about-container {
-  background-color: rgba(14, 32, 53, 0.7);
+  background-color: rgba(25, 51, 81, 0.7);
   padding: $spacing-md;
   border-radius: $border-radius-md;
   border: 1px solid rgba(59, 109, 152, 0.2);
   max-width: 800px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   box-shadow: 0 5px 15px rgba(6, 11, 18, 0.3);
 }
 
