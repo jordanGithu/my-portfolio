@@ -46,6 +46,10 @@ a {
   &:hover { color: $color-blue-frost; }
 }
 
+i {
+  color: $color-blue-light
+}
+
 img {
   max-width: 100%;
   height: auto;

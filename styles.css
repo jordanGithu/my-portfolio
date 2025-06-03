@@ -29,6 +29,10 @@ a:hover {
   color: #c9dae7;
 }
 
+i {
+  color: #3b6d98;
+}
+
 img {
   max-width: 100%;
   height: auto;
